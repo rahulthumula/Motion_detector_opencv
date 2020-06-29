@@ -2,12 +2,8 @@ import imutils
 import cv2
 import numpy as np
 
-# =============================================================================
-# USER-SET PARAMETERS
-# =============================================================================
 
 # Number of frames to pass before changing the frame to compare the current
-# frame against
 FRAMES_TO_PERSIST = 10
 
 # Minimum boxed area for a detected motion to count as actual motion
@@ -17,10 +13,6 @@ MIN_SIZE_FOR_MOVEMENT = 2000
 # Minimum length of time where no motion is detected it should take
 #(in program cycles) for the program to declare that there is no movement
 MOVEMENT_DETECTED_PERSISTENCE = 100
-
-# =============================================================================
-# CORE PROGRAM
-# =============================================================================
 
 
 # Create capture object
